@@ -1,6 +1,7 @@
 """Tests for EmiratesAIWeatherUpdate weather module."""
 
 import json
+import os
 import sys
 import unittest
 from io import StringIO
@@ -84,8 +85,6 @@ class TestMain(unittest.TestCase):
         output = captured.getvalue()
         self.assertIn("Emirates AI Weather Update", output)
 
-
-import os  # noqa: E402 (needed after class definitions above)
 
 if __name__ == "__main__":
     unittest.main()
